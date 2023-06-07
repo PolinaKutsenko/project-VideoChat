@@ -1,0 +1,30 @@
+#loginButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+
+    width: 332px;
+    height: 48px;
+    margin: 0;
+
+    background: var(--primary-blue);
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-blue);
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.button-text-flex {
+    display: flex;
+    align-items: center;
+    width: 108px;
+    height: 24px;
+}

@@ -1,0 +1,99 @@
+.messageFlexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    
+    background: var(--primary-gray-dark);
+}
+
+.messageFlexContainer.start {
+    justify-content: flex-start;
+}
+
+.messageFlexContainer.end {
+    justify-content: flex-end;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 4px;
+
+    background: var(--primary-black);
+    border-radius: 12px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.marginBottom {
+    margin-bottom: 21px;
+}
+
+.firstMessageMarginTop {
+    margin-top: 30px;
+}
+
+div.borderRadiusStart {
+    border-radius: 12px 12px 12px 4px;
+}
+
+div.borderRadiusEnd {
+    border-radius: 12px 12px 4px 12px;
+}
+
+
+.userNameForMessage {
+    overflow-wrap: break-word;
+    max-width: 280px;
+    white-space: normal;
+}
+
+.userNameForMessage.purple {
+    color: var(--secondary-purple);
+}
+
+.userNameForMessage.blue {
+    color: var(--primary-blue);
+}
+
+.messageTextContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    
+    padding: 0px;
+    background: var(--primary-black);
+
+    flex-grow: 1;
+}
+
+
+.messageText {
+    overflow-wrap: break-word;
+    max-width: 200px;
+    white-space: normal;
+}
+
+.messageData {
+    color: var(--overlay-white-25pr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+
+.messageDote {
+    color: var(--overlay-white-25pr);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+}

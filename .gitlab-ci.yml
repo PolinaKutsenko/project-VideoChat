@@ -1,0 +1,3 @@
+include:
+  - 'pipelines/update.yml'
+

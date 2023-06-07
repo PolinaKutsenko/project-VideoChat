@@ -1,0 +1,28 @@
+#videoChatContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+
+    width: calc(100vw - 35px - 35px - 340px);
+    height: calc(100vh - 87px - 167px);
+
+    position: absolute;
+    left: calc(35px);
+    top: 87px;
+}
+
+.videoChatContainerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+
+    height: calc((100vh - 87px - 167px - 16px)/2);
+        
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

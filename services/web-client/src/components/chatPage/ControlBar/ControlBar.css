@@ -1,0 +1,13 @@
+#controlBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    position: absolute;
+    width: 176px;
+    height: 48px;
+    left: calc((100vw - 340px - 176px)/2);
+    bottom: 32px;
+}

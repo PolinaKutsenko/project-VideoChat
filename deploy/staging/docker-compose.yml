@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  socket:
+    build:
+      context: ../../services/socket
+      dockerfile: ./Dockerfile
+    restart: always
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - API_KEY=apikey
+      - API_SECRET=apisecret
+      - ALLOWED_ORIGIN=https://kurentochat-pk.staging.forasoft.com
+    ports:
+      - "3000:3000"
+
+  
+  web-client:
+    build:
+      context: ../../services/web-client
+      dockerfile: ./Dockerfile
+    restart: always
+    depends_on:
+      - socket
+    ports:
+      - "3001:3001"
+

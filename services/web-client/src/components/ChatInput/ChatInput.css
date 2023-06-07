@@ -1,0 +1,77 @@
+#chatInputButtonIcon {
+    width: 34px;
+    height: 34px;
+
+    padding: 0;
+
+    background-color: var(--primary-black);
+    border: none;
+    cursor: url("../../icons/Cursor.png"), pointer;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+
+.textChatInput:hover ~ #chatInputButtonIcon {
+    background-color: var(--primary-gray-dark);
+}
+
+.textChatInput {
+    width: 246px;
+    height: 24px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-black);
+    border: none;
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    z-index: 0;
+}
+
+.textChatInput input {
+    width: 246px;
+    height: 24px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-black);
+    border: none;
+    outline: none;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    z-index: 0;
+}
+
+.textChatInput input:hover {
+    box-sizing: border-box;
+    border: none;
+    cursor: url("../../icons/Cursor.png"), pointer;
+}
+
+.textChatInput input:focus {
+    box-sizing: border-box;
+    border: none;
+}
+
+.textChatInput input:active {
+    box-sizing: border-box;
+    border: none;
+}
+
+.textChatInput input::selection{
+    background-color: var(--primary-blue-25pr);
+    color: var(--primary-white);
+}

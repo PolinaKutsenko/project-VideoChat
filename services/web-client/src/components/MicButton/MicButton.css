@@ -1,0 +1,44 @@
+#micIcon {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    background: var(--primary-white);
+    border-radius: 30px;
+    border: none;
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.micPosition {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 9px;
+    top: 9px; 
+}
+
+#micIcon:hover {
+    background-color: var(--overlay-white-75pr);
+}
+
+#micIcon:hover ~ #micTooltip {
+    display: flex;
+}
+
+#micTooltip {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background: var(--primary-black);
+
+    position: absolute;
+    width: 134px;
+    height: 36px;
+    left: -44px;
+    bottom: calc(48px + 8px);
+}

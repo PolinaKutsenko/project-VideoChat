@@ -1,0 +1,29 @@
+#not-found-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--overlay-white-25pr);
+}
+
+#not-found-page h1 {
+    color: var(--primary-gray-dark);
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: calc((100vh - 100px)/2);
+}
+
+#not-found-page p {
+    color: var(--primary-gray-dark);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#not-found-url {
+    color: var(--primary-blue);
+    text-decoration: none;
+}

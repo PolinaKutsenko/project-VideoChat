@@ -1,0 +1,31 @@
+#fullRoomButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+
+    width: 332px;
+    height: 48px;
+    margin: 0px;
+
+    background: var(--primary-white);
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-white);
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#fullRoomText {
+    display: flex;
+    align-items: center;
+    color: var(--primary-black);
+    width: 39px;
+    height: 24px;
+}

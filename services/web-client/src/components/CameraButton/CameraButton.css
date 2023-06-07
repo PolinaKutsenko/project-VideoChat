@@ -1,0 +1,43 @@
+#cameraIcon {
+    width: 48px;
+    height: 48px;
+
+    background: var(--primary-white);
+    border-radius: 30px;
+    border: none;
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cameraPosition {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 9px;
+    top: 9px; 
+}
+
+#cameraIcon:hover {
+    background-color: var(--overlay-white-75pr);
+}
+
+#cameraIcon:hover ~ #cameraTooltip {
+    display: flex;
+}
+
+#cameraTooltip {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background: var(--primary-black);
+
+    position: absolute;
+    width: 134px;
+    height: 36px;
+    left: 22px;
+    bottom: calc(48px + 8px);
+}

@@ -1,0 +1,152 @@
+#textChatContainer {
+    position: absolute;
+    width: 340px;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+
+
+    background: var(--primary-gray-dark);
+}
+
+#textChatName {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 49px;
+    height: 28px;
+    left: 24px;
+    top: 24px;
+}
+
+#textChatName p {
+    width: 49px;
+    height: 28px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#textChatLine {
+    position: absolute;
+    width: 338px;
+    height: 0px;
+    left: 0px;
+    top: 64px;
+
+    border: 1px solid var(--primary-gray);
+}
+
+#messagesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    gap: 4px;
+
+    position: absolute;
+    width: 316px;
+    left: 12px;
+    top: 66px;
+    bottom: 63px;
+
+    overflow-y: scroll;
+
+}
+
+#messagesContainer::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--primary-gray-dark);
+    
+}
+
+#messagesContainer::-webkit-scrollbar-thumb {
+    background-color: var(--overlay-white-25pr);
+    
+}
+
+.textChatFormContainer {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 316px;
+    height: 50px;
+    left: 12px;
+    bottom: 12px;
+
+    background: var(--primary-black);
+
+    border: 1px solid var(--primary-black);
+    border-radius: 11px;
+}
+
+
+.textChatFormContainer:hover {
+    background: var(--primary-gray-dark);
+    border: 1px solid var(--overlay-white-25pr);
+    outline: none;
+    cursor: url("../../../icons/Cursor.png"), pointer;
+}
+
+.textChatFormContainer:hover input {
+    background: var(--primary-gray-dark);
+    outline: none;
+}
+
+.textChatFormContainer:hover #chatInputButtonIcon {
+    background: var(--primary-gray-dark);
+    outline: none;
+}
+
+.textChatFormContainer:active {
+    background: var(--primary-black);
+    border: 1px solid var(--primary-black);
+    outline: none;
+}
+
+.textChatFormContainer:active input,
+.textChatFormContainer:focus input {
+    background: var(--primary-black);
+    outline: none;
+}
+
+.textChatFormContainer:active #chatInputButtonIcon,
+.textChatFormContainer:focus #chatInputButtonIcon {
+    background: var(--primary-black);
+    outline: none;
+}
+
+.textChatFormContainer:focus {
+    background: var(--primary-black);
+    border: 1px solid var(--primary-black);
+    outline: none;
+}
+
+.textChatFormContainer:hover input:-webkit-autofill {
+    -webkit-text-fill-color: var(--primary-white);
+    -webkit-box-shadow: 0 0 0px 40rem var(--primary-gray-dark) inset;
+}
+  
+.textChatFormContainer input:-webkit-autofill,
+.textChatFormContainer:active input:-webkit-autofill,
+.textChatFormContainer:focus input:-webkit-autofill {
+    -webkit-text-fill-color: var(--primary-white);
+    -webkit-box-shadow: 0 0 0px 40rem var(--primary-black) inset;
+}
+

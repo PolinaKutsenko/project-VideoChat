@@ -1,0 +1,57 @@
+.full-room {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--primary-black);
+}
+
+.full-room-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 12px;
+
+    position: absolute;
+    width: 412px;
+    height: 364px;
+    left: calc((100vw - 412px)/2);
+    top: calc((100vh - 364px)/2);
+
+    background: var(--primary-gray-dark);
+    border-radius: 12px;
+}
+
+#cat4 {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.full-room-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 332px;
+    height: 102px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#room-is-full {
+    width: 134px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+}

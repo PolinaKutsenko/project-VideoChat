@@ -1,0 +1,59 @@
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 12px;
+    gap: 10px;
+
+    width: 332px;
+    height: 52px;
+    margin: 0;
+
+    background: var(--primary-gray);
+    border-radius: 11px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-gray);
+    cursor: url("../../icons/Cursor.png"), pointer;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.input::selection{
+    background-color: var(--primary-blue-25pr);
+    color: var(--primary-white);
+}
+
+.input:hover {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+}
+
+.input:focus {
+    box-sizing: border-box;
+    border: 1px solid #2C68FA;
+    z-index: 1;
+    outline: none;
+}
+
+.input:active {
+    box-sizing: border-box;
+    border: 1px solid #2C68FA;
+    z-index: 1;
+    outline: none;
+}
+
+.error {
+    box-sizing: border-box;
+    border: 1px solid #FF4E4E;
+    order: 0;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover, 
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--primary-white);
+  -webkit-box-shadow: 0 0 0px 40rem var(--primary-gray) inset;
+}
